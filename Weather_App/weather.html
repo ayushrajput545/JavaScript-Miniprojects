@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     
+   <div class="wrapper">
+
+      <h1>Weather App</h1>
+
+      <div class="tab-container">
+        <p class="tab" data-userWeather="">Your Weather</p>  <!-- use custom attribute -->
+         <p class="tab" data-searchWeather="">Search Weather</p>
+      </div>
+
+       <div class="weather-container"> <!-- All screens code written inside it-->
+         
+        <!-- Screen 1 : Grant location container -->
+
+          <div class="sub-container grant-location-container">
+            <img src="./weatherimages/grantlocation.png" alt="" width="80" height="80" loading="lazy">
+            <p>Grant Location Access</p>
+            <p>Allow Access to get weather Information</p>
+            <button class="btn" data-grantAccess>Grant Access</button>
+          </div>
+
+          <!-- Screen 2: Search Weather container -->
+
+          <form class="form-container" data-searchForm>
+            <input placeholder="Search for City..." data-searchInput> <!-- Placeholder means text writteninside it -->
+            <button class="btn" type="submit" >
+                <img src="./weatherimages/searchicon.png" alt="" width="20" height="20">
+            </button>
+            
+          </form>
+
+           <div class="sub-container cityNotFound">
+               <img src="./weatherimages/errorwarning.png" width="50px" height="50px" alt="">
+               <p>Sorry , City not Found</p>
+           </div>
+           
+         
+
+          <!-- Screen 3: Loading screen -->
+
+          <div class="sub-container loading-container">
+            <img src="./weatherimages/loadingimg.gif" alt="" width="150" height="150"> 
+            <p>Loading</p>
+          </div>
+
+          <!-- Sceen 4: Weather info. same for both user weather and search weather(both have same ui)-->
+
+          <div class="sub-container user-info-container">
+
+            <!-- City Name and Flag -->
+            <div class="name">
+                 <p data-cityName></p> <!--Info. inside it are dynamic(changes) so we gave it custom attribute we change it through javascript  -->
+                 <img data-countryIcon><!-- dynamically update by java script -->
+            </div>
+             
+            <!-- Weather desc , Icon , Temperature -->
+            <p data-weatherDesc></p> 
+            <img data-weatherIcon>
+            <p data-temp></p>
+
+            <!-- 3 cards - parameters -->
+
+              
+               <div class="parameter-container">
+
+                 <!-- card 1-->
+               <div class="parameter">
+                  <img src="./weatherimages/wind.png">
+                  <p>Windspeed</p>
+                  <p data-windspeed></p>
+               </div>
+
+               <!-- card 2 -->
+               <div class="parameter">
+                <img src="./weatherimages/humidity.png">
+                <p>Humidity</p>
+                <p data-humidity></p>
+               </div>
+
+               <!-- card -->
+               <div class="parameter">
+                <img src="./weatherimages/blueClouds.png" alt="">
+                <p>Clouds</p>
+                <p data-cloudiness></p>
+               </div>
+
+               </div>
+
+            
+
+
+
+          </div>
+
+
+
+         
+
+      </div>
+
+   </div>
+    <script src="weather.js"></script>
+</body>
+</html>

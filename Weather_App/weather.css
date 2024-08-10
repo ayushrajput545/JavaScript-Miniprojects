@@ -1,0 +1,277 @@
+ 
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Merriweather Sans", sans-serif;
+}
+
+/* GLOBEL VARIABLE */
+:root{
+   --colorDark1: #112D4E;
+   --colorDark2: #3F72AF;
+   --colorLight1: #DBE2EF;
+   --colorLight2: #F9F7F7;
+}
+
+ 
+.wrapper{
+   width:100vw;
+   height:100vh;
+   max-height: 30%;
+   color: var(--colorLight2); /*  use of global vaibale */
+   background: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+    
+
+}
+
+h1{
+   text-align: center;
+   text-transform: uppercase;
+   padding-top: 20px;
+}
+
+.tab-container{
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   max-width: 550px; /* tab container has this max width*/
+   margin-top: 3rem; 
+}
+
+.tab{
+   cursor: pointer;
+   font-size: 0.875rem;
+   letter-spacing: 1.75px; 
+   padding: 5px 8px; /*top right and bottom left*/
+
+
+}
+
+   .tab.current-tab {                  /* curent tab is a class create in js under classlist */
+   background-color: rgba(219 , 226 , 239 ,0.5);
+   border-radius: 4px;
+ }
+
+  .weather-container{
+   
+   margin-block: 3rem;  /*Set top and bottom margin*/
+   margin-top: 2rem;
+   }  
+
+ .btn{
+    all: unset; /* It remove all default properties */
+   font-size: 0.85rem;
+   background-color: var(--colorDark2) ;
+   text-transform: uppercase;
+   border-radius: 5px;
+   cursor: pointer;
+   padding: 10px 30px;
+   margin-bottom: 10px;
+   /* border: none; */
+ }
+
+ /* SCREEN 1: GRANT LOCATION */
+
+  .sub-container{   /* This will reuse */
+   display: flex;       /* DISPLAY FLEX ;;VISIBLE*/
+   flex-direction: column;
+   align-items: center;
+ }
+ .grant-location-container{
+     display: none;  /*This containe invisible ; it visible A/c to JS code */
+ }
+
+  .grant-location-container.active{ 
+   display: flex;    /* DISPLAY NONE SE AGAIN FLEX HOGYI ;Jese he active class lagaouga(from JS) then it visible  */
+ }
+
+ .grant-location-container img{
+   margin-bottom:2rem;
+ }
+
+ .grant-location-container p:first-of-type{  /* grant location ka pahla paragraph */
+   font-size: 1.75rem;
+   font-weight: 600;
+ }
+
+ .grant-location-container p:last-of-type{
+   font-size: 0.85rem;
+   font-weight: 500;
+   margin-top: 0.75rem;
+   margin-bottom: 1.75rem;
+   letter-spacing: 0.75px;
+
+ }
+
+ /* LOADING SCREEN  */
+
+ .loading-container{
+   display: none;
+ }
+
+ .loading-container.active{
+   display: flex;
+ }
+
+ .loading-container p{
+   text-transform: uppercase;
+ }
+
+.loading-container img {
+   mix-blend-mode: color-burn;
+}
+
+/* USER WEATHER SCREEN */
+
+.user-info-container{
+   display: none;
+}
+
+.user-info-container.active{
+   display: flex;
+}
+
+.user-info-container p{
+font-size: 1.5rem;
+font-weight: 200;
+}
+
+.user-info-container img{
+   width: 90px;
+   height: 90px;
+}
+
+
+.name{
+   display: flex;
+   align-items: center;
+   gap:  1rem;
+   margin-bottom: 1rem;
+}
+
+.name p{
+   font-size:2rem;
+}
+
+.name img{
+   width: 30px;
+   height: 30px;
+}
+
+ .user-info-container p[data-temp]{ /* handle paragraph using custpm attribute*/
+   font-size:2rem;
+   font-weight: 700;
+   
+}
+
+.parameter-container{
+   display: flex;
+   gap: 10px 20px;
+   justify-content: center; /*Horizontally centre */
+   align-items: center;
+   margin-top: 2rem;
+   
+}
+
+.parameter{
+   width: 30%;  /* eact card take 30% of width*/
+   max-width: 200px;
+   background-color: rgba(219 , 226 , 239 ,0.5);
+   border-radius: 5px;
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   gap: 5px 0;
+   align-items: center;
+}
+
+.parameter img{
+   width: 40px;
+   height: 40px;
+}
+.parameter p:first-of-type{
+   font-size: 1.15rem;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+.parameter p:last-of-type{
+   font-size: 1rem;
+   font-weight: 200;
+
+}
+
+
+/* SCREEN SEACRCH */
+.form-container{
+   display: none;
+    
+   width: 90%;
+   max-width: 550px;
+   margin: 0 auto;
+   justify-content: center;
+   align-items: center;
+   gap: 0 10px;
+   margin-bottom: 3rem;
+}
+
+.form-container.active{
+   display: flex;
+}
+
+.form-container input{
+    all: unset;    /*  Write it in starting */
+    width: calc(100% - 80px); /* form conatiner ki width se compare */
+   height: 40px;
+   padding: 0 20px;
+   background-color: rgba(219 , 226 , 239 ,0.5);
+   border-radius: 10px;
+}
+
+.form-container input::placeholder{
+   color: rgba(255, 255, 255, 0.7);
+}
+
+ .form-container input:focus{     /* on clicking search form outline form*/
+   outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.form-container .btn{
+   padding: unset;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 100%;
+    margin-bottom: 1px;     /* Above btn override */
+   
+}
+
+.cityNotFound{
+   display: none;
+   flex-direction: column;
+   gap: 10px;
+   max-height: 550px;
+   margin-top: 10rem;
+}
+
+.cityNotFound.active{
+   display: flex;
+}
+
+
+
+
+
+
+
+/* 
+  .form-container.active{
+   scale:1;
+   opacity: 1;
+   display: flex;
+  }   */
+
+ 
