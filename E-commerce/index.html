@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>E commerce | furni.shop</title>
+
+</head>
+<body>
+    <!-- NAV BAR SECTION -->
+    <nav>
+
+        <div class="nav-header">
+
+            <div class="nav-logo">
+                <a href="#" class="logo">furni.shop</a>
+            </div>
+
+            <div class="nav-menu-btn" id="menu-btn">
+                <i class="ri-menu-line"></i> <!-- ri close line icon is set in js  -->
+            </div>
+
+        </div>
+
+
+        <ul class="nav-links" id="nav-links">
+
+            <li><a href="#home">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li><a href="#product">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+
+        <div class="nav-search"  id="nav-search">
+            <input type="text" placeholder="Search">
+            <span id="nav-search-icon"><i class="ri-search-2-line"></i></span>
+
+        </div>
+
+    </nav>
+
+     <!-- HEADER CONTAINER -->
+    <header class="section-container header-container" id="home">
+
+        <div class="header-image">
+            <img src="assests/header.jpg" alt="">
+        </div>
+
+        <div class="header-content">
+            <div>
+                <h1>We Help You Make Modern Interior</h1>
+                <p>
+                    We will help you to make an elegant and luxurious Interior
+                    by professional interior designer
+                </p>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Deals Container -->
+    <section class="section-container deals-container">
+
+        <div class="deals-card">
+            <h2 class="section-header">Hot 🔥 deals for you </h2>
+            <p>Online shopping for retail sales direct to consumers</p>
+        </div>
+
+        <div class="deals-card">
+            <span><i class="ri-cash-line"></i></span>
+            <h4>1.5% cashback</h4>
+            <p>Earn a 5% cashback reward on every furniture purchase you make!</p>
+        </div>
+
+        <div class="deals-card">
+            <span><i class="ri-calendar-schedule-line"></i></span>
+            <h4>30 days terms</h4>
+            <p> Take advantage of our 30-day payment terms, completely interest-free!!</p>
+        </div>
+
+        <div class="deals-card">
+            <span><i class="ri-money-rupee-circle-line"></i></span>
+            <h4>Save money</h4>
+            <p> Discover unbeatable prices and save big money on top-quality furniture</p>
+        </div>
+
+    </section>
+
+    <!-- About Container -->
+    <section class="section-container about-container" id="about">
+
+
+        <div class="about-header">
+
+            <div>
+                <h2 class="section-header">About us</h2>
+                <p class="section-description">
+                    Our passion for exceptional craftsmanship drives us to curate
+                    best pieces for every room in your house.
+                </p>
+            </div>
+
+            <button class="about-btn">Learn More</button>
+
+        </div>
+
+        
+        <div class="about-content">
+
+            <div class="about-images">
+                <img src="./assests/about.png" alt="about">
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-card">
+                    <h3>1.</h3>
+                    <h4>Who we are</h4>
+                    <p>
+                        You got a week free trail to kick the smaert tries. We want you to.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>2.</h3>
+                    <h4>What do we do</h4>
+                    <p>
+                        We give you a free course that guides you through process.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>3.</h3>
+                    <h4>How do we help</h4>
+                    <p>
+                        Use our multimedias lecture, videos , and coaching sessions.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>4.</h3>
+                    <h4>Create success story</h4>
+                    <p>
+                        With access to online learning resources anyone can transform 
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Product Container -->
+     <section class="section-container product-container" id="product">
+
+        <h2 class="section-header">Products</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <h4>Stackable Chair</h4>
+                <p>$87.00</p>
+                <img src="./assests/product-1.png" alt="">
+            </div>
+
+            <div class="product-card">
+                <h4>Lamp Tool</h4>
+                <p>$35.00</p>
+                <img src="./assests/product-2.png" alt="">
+            </div>
+
+            <div class="product-card">
+                <h4>Dining Chair</h4>
+                <p>$55.00</p>
+                <img src="./assests/product-3.png" alt="">
+            </div>
+
+            <div class="product-card">
+                <h4>Hand Base lamp</h4>
+                <p>$35.00</p>
+                <img src="./assests/product-4.png" alt="">
+            </div>
+
+            <div class="product-card">
+                <h4>Stylish Chair</h4>
+                <p>$45.00</p>
+                <img src="./assests/product-5.png" alt="">
+            </div>
+
+            <div class="product-card">
+                <h4>Vintage Chair</h4>
+                <p>$65.00</p>
+                <img src="./assests/product-6.png" alt="">
+            </div>
+
+        </div>
+        
+     </section>
+
+     <!-- Contact us form -->
+
+     <form action="#" class="section-container" id="#contact">
+
+      <div class="contact-header">
+        <h2 class="section-header">Contact us </h2>
+        <p class="section-description">Question, Thoughts, Or Just Want To Say Hello ? </p>
+      </div>
+        
+      <div class="form-info">
+
+         <label for="" class="form-content">
+            <p>First Name</p>
+            <input type="text" placeholder="Enter your first name"></input>
+        </label>
+
+        <label for="">
+            <p>Last Name</p>
+            <input type="text" placeholder="Enter your last name">
+        </label>
+
+        <label>
+            <p>Email</p>
+            <input type="email" placeholder="abcd@gmail.com">
+        </label>
+
+        <label for="">
+            <p>Message</p>
+            <textarea name="" id="" placeholder="Enter your Message here"></textarea>
+        </label>
+
+        <button>Send</button>
+
+      </div>
+       
+
+     </form>
+
+     <!-- Client container -->
+      <section class="section-container client-container">
+
+        <div class="client-content">           
+            <h2 class="section-header">What our happy client says</h2>
+            <p class="section-description">
+                Testimonials Highlighting Our Commitment to Quality, exceptional
+                Service, and Customer Satisfaction
+            </p>
+        
+
+        <!-- Slider main container -->
+        <div class="swiper">
+
+            <!-- Additional required wrapper -->
+             <div class="swiper-wrapper">
+                
+                <!-- Slides -->
+                 <div class="swiper-slide">
+                    <div class="client-card">
+                    <img src="./assests/user-1.jpg" alt="user">
+                    <div>
+                        <p>Furni.shop transformed my living space with their best 
+                            and affordable furnitures. The 5% cashback was a delighted 
+                            bonus!
+                        </p>
+                        <h4>David Miller</h4>
+                        <h5>Real Estate Agent</h5>
+                    </div>
+                 </div>
+             </div>
+                  
+                
+                
+                 <div class="swiper-slide">
+                    <div class="client-card">
+                    <img src="./assests/user-2.jpg" alt="user">
+                    <div>
+                        <p>
+                             Eceptional quality and service! The furniture is stunning,
+                            and the 30-day payment terms made it incredibly comvenient.
+                        </p>
+                        <h4>Sara Thompsan</h4>
+                        <h5>Interior Designer</h5>
+                    </div>
+                 </div>
+                 </div>
+                      
+                
+                 <div class="swiper-slide">
+                     <div class="client-card">
+                    <img src="./assests/user-3.jpg" alt="user">
+                    <div>
+                        <p> 
+                            The 30-days terms made it easy us to furnish our new home
+                            without financial stress. Highly recommended!
+                        </p>
+                        <h4>Michael Lee</h4>
+                        <h5>Entrepreneur</h5>
+                    </div>
+                 </div>
+               </div>
+                
+                 
+             </div>
+          </div>
+
+        </div>
+
+        
+      </section>
+
+    <!-- Footer section -->
+       
+      <footer class="footer" id="footer">
+
+        <div class="section-container footer-container">
+
+          <div class="footer-col">
+
+              <div class="footer-logo">
+                 <a href="#" class="logo">furni.shop</a>
+              </div>
+               
+            <p>
+                Join us in transforming your living spaces with furniture that blends elegance and practically
+                seamlessly.
+            </p>
+
+            <ul class="footer-socials">
+
+                <li>
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="ri-linkedin-fill"></i></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="ri-instagram-line"></i></i></a>
+                </li>
+
+            </ul>
+
+         </div>
+
+
+         <div class="footer-col">
+
+            <h4>Services</h4>
+
+            <ul class="footer-links">
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Payrol</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+
+         </div>
+
+
+         <div class="footer-col">
+
+            <h4>Resources</h4>
+
+            <ul class="footer-links">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Support</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms</a></li>
+            </ul>
+
+         </div>
+
+
+         <div class="footer-col">
+
+            <h4>Support</h4>
+
+            <ul class="footer-links">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Concelation Policy</a></li>
+                <li><a href="#">Security</a></li>
+            </ul>
+
+         </div>
+
+        </div>
+
+        <div class="footer-bar">
+            Copyright @ 2024 Web Design Mastery. All right reserved.
+        </div>
+
+      </footer>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="https://unpkg.com/scrollreveal"></script>
+ <script src="script.js"></script>
+</body>
+</html>
